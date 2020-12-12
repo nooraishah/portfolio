@@ -31,5 +31,64 @@
     <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 </ul>
 </div>
+<div class="information">
+    <div class="overlay"></div>
+    <img src="webdevdes.png" class="web">
+    <div id="square">
+        <div class="feature one">
+            <img src="css1.png">
+            <div>
+                <h3>CSS</h3>
+            </div>
+        </div>
+        <div class="feature two">
+            <img src="database1.png">
+            <div>
+                <h3>DATABASE</h3>
+            </div>
+        </div>
+        <div class="feature three">
+            <img src="js1.png">
+            <div>
+                <h3>JAVASCRIPT</h3>
+            </div>
+        </div>
+        <div class="feature four">
+            <img src="html2.png">
+            <div>
+                <h3>HTML</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="controls">
+    <img src="web2.gif" class="controls-gif">
+    <img src="arrow.png" id="upBtn">
+    <h3>What We Do?</h3>
+    <img src="arrow.png" id="downBtn">
+    <img src="web.gif" class="controls-gif">
+    </div>
+</div>
+ <script>
+     var square = document.getElementById("square");
+     var upBtn = document.getElementById("upBtn");
+     var downBtn = document.getElementById("downBtn");
+     
+     var rotateValue = square.style.transform;
+     var rotateSum;
+
+     upBtn.onclick = function()
+     {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        square.style.transform = rotateSum;
+        rotateValue = rotateSum;
+     }
+     downBtn.onclick = function()
+     {
+        rotateSum = rotateValue + "rotate( 90deg)";
+        square.style.transform = rotateSum;
+        rotateValue = rotateSum;
+     }
+ </script>
 </body>
 </html> 
